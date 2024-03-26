@@ -1,0 +1,638 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1c1e53;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5e3bee !important;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo a {
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .logo img {
+  width: 40px;
+  height: 40px;
+}
+/*--------------------------NAV BAR-----------------------*/
+nav ul,
+footer .top ul {
+  display: flex;
+  gap: 40px;
+}
+nav {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  padding: 0 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+nav button {
+  color: #1c1e53;
+  background-color: transparent;
+  padding: 12px 16px;
+  border-radius: 5px;
+  border: 1px solid #1c1e53;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #5e3bee;
+  border-color: #5e3bee;
+  color: #fff;
+}
+
+nav button#menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 7px;
+}
+
+.side-bar {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.358);
+  backdrop-filter: blur(10px);
+  box-sizing: -10px 0 10px rgb(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  gap: 0px;
+}
+.side-bar li {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-bar button {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.side-bar li:hover {
+  background-color: #5e3bee;
+  transition: background-color 0.3s ease;
+}
+.side-bar li:hover a {
+  color: #fff !important;
+  transition: color 0.2s ease;
+}
+/*----------------------main container-----------------*/
+.main {
+  background-color: #deebee;
+  padding: 20px 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.main .left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main .left h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 46px;
+}
+
+.main .left h3 span {
+  color: #5e3bee;
+}
+
+.main .left p {
+  color: #1c1e53;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.main .left button {
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+  background-color: #5e3bee;
+  padding: 14px 24px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.main .left button h2 {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 2vh;
+}
+
+.main .left button a:hover {
+  color: #5e3bee !important;
+}
+
+.main .left .technology h5 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.main .left img {
+  width: 30px;
+}
+.main.left.technology h5 i {
+  width: 60px;
+}
+
+.main .right img {
+  width: 500px;
+  border-radius: 2%;
+}
+/*--------skills------------------*/
+.skills {
+  padding: 90px 85px 0;
+}
+
+.skills h3,
+.about .right h3,
+.portfolio .header h3 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.skills .skill-items {
+  display: flex;
+  margin-top: 70px;
+  gap: 30px;
+}
+
+.skills .skill-items .item {
+  background-color: #deebee;
+  width: 25%;
+  border-radius: 10px;
+  padding: 32px;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover {
+  border-color: #5e3bee;
+}
+
+.skills .skill-items .item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-items .item .icon i {
+  font-size: 26px;
+  color: #006b6a;
+}
+
+.skills .skill-items .item h4,
+.portfolio .portfo-items .item .info h4 {
+  font-size: 18px;
+}
+
+.skills .skill-items .item p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1c1e53;
+}
+/*---------------ABOUT -------------*/
+.about {
+  padding: 110px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about .left {
+  border-radius: 10px 10px 0 0;
+}
+
+.about .left img {
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about .right p {
+  font-size: 16px;
+  margin-top: 30px;
+}
+/*-----------------PORTFOLIOOOOOOOOO---------------------*/
+.portfolio {
+  background-color: #deebee;
+  padding: 85px 85px;
+}
+
+.portfolio .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio .portfo-items {
+  padding: 8% 5% 0% 5%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+.portfolio .portfo-items .left img {
+  height: 40vh;
+  border-radius: 2%;
+}
+
+.portfolio .portfo-items h3 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.portfolio .portfo-items .right samp {
+  padding: 0px 10px 0px 10px;
+}
+.portfolio .portfo-items .right p {
+  text-align: center;
+}
+.portfolio .portfo-items .right a {
+  align-items: center;
+  top: 40px 20px 0px 20px;
+}
+.portfolio .portfo-items .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 20px;
+  gap: 3%;
+}
+/* ----------------------SLIDE SHOW ---------------------------*/
+
+.mySlides {
+  height: 260px;
+  border-radius: 2%;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  z-index: 0;
+  max-width: 1000px;
+  min-width: 300px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(161, 165, 167);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+  position: absolute;
+  bottom: 10px; /* ajustați la distanța dorită de jos */
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #5e3bee;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*------------------FOOTER------------------- */
+
+footer {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 20px;
+}
+
+footer .socials i {
+  font-size: 40px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer .socials i:hover {
+  color: #303f9f;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main .left h5 {
+    font-size: 18px;
+  }
+
+  .main .left h3 {
+    font-size: 36px;
+  }
+
+  .main .left p {
+    font-size: 18px;
+  }
+
+  .main .right img {
+    width: 380px;
+  }
+
+  .skills .skill-items {
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .skills .skill-items .item {
+    width: 49%;
+  }
+
+  .about .left img {
+    width: 370px;
+  }
+
+  .skills h3,
+  .about .right h3,
+  .portfolio .header h3 {
+    font-size: 32px;
+  }
+
+  .about .right p {
+    font-size: 15px;
+  }
+
+  .feedback .customers .item .rating {
+    font-size: 20px;
+  }
+
+  .feedback .customers .item p {
+    font-size: 13px;
+  }
+
+  footer .top ul {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio .portfo-items {
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio .portfo-items .item {
+    width: 48%;
+  }
+
+  .feedback .customers {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feedback .customers .item {
+    width: 48%;
+  }
+
+  footer .top ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 42px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.open .logo {
+    display: none;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  nav button#menuButton {
+    display: flex;
+  }
+
+  .main {
+    padding: 100px;
+  }
+
+  .skills {
+    padding: 85px 42px 0;
+  }
+
+  .skills .skill-items {
+    gap: 8px;
+  }
+
+  .about {
+    padding: 12%;
+  }
+
+  .portfolio {
+    padding: 60px 42px;
+  }
+
+  .portfolio .portfo-items {
+    gap: 18px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer .bottom {
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav ul li a {
+    font-size: 13px;
+  }
+
+  nav .logo a {
+    font-size: 18px;
+  }
+
+  .main .left h3 {
+    font-size: 32px;
+  }
+
+  .main .left p {
+    font-size: 16px;
+  }
+
+  .main .left button {
+    width: 100%;
+  }
+
+  .skills .skill-items .item {
+    width: 100%;
+  }
+
+  .portfolio .header button {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .portfolio .portfo-items .item {
+    width: 80%;
+  }
+
+  .feedback .customers .item {
+    width: 100%;
+  }
+}

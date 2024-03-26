@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-whidth, initial-scale=1.0" />
+    <title>Promotie - Fashion Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="products.html"
+            ><img src="images/logo1.jpg" width="200px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="products-details.html">Promotion</a></li>
+
+            <li><a href="cont.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cos.html"
+          ><img src="images/cart.png" width="30px" height="30px"
+        /></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <!--------------------single product details---------------->
+
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/gallery-1.jpg" width="100%" id="ProductImg" />
+
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img src="images/gallery-1.jpg" width="100%" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="images/gallery-2.jpg" width="100%" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="images/gallery-3.jpg" width="100%" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="images/gallery-4.jpg" width="100%" class="small-img" />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <p>Home / T-Shirt</p>
+          <h1>Tricou rosu din bumbac</h1>
+          <h4 class="reducere">500 ron</h4>
+          <h4>300 ron</h4>
+
+          <select>
+            <option>Select size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <input type="number" value="1" />
+          <a href="" class="btn">Adauga in coș</a>
+          <h3>Product details<i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            Acest produs are o calitate superiara , fiind facut in germania .
+            Este confectionat doar din materiale naturale reciclate. Este
+            disponibil la oferta dar in stoc limitat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!---------------Titlu--------------------->
+    <br />
+    <br />
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Produse asemanatoare</h2>
+
+        <p>View more</p>
+      </div>
+    </div>
+
+    <!-------------------Products---------------->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="images/product-9.jpg" />
+          <h4>Ceas Rolex</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>200 ron</p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-10.jpg" />
+          <h4>Papuci de alergat</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>350 ron</p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-11.jpg" />
+          <h4>Papuci comozi</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>250 ron</p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-12.jpg" />
+          <h4>Pantaloni Nike</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>200 ron</p>
+        </div>
+      </div>
+    </div>
+
+    <!-----------footer-------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo1.jpg" height="200" />
+          </div>
+          <div class="footer-col-3">
+            <h3>Follow</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <p class="copyright">Copyright 2021 - Șandru Darius</p>
+      </div>
+    </div>
+
+    <script src="script-shop-web.js"></script>
+  </body>
+</html>

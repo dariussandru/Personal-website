@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/icons8-coding-48.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style-contact.css" />
+    <title>Personal Portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html#main">Home</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+      </ul>
+
+      <ul class="side-bar">
+        <button onclick="HideSlideBar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="20"
+            height="20"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"
+            ></path>
+          </svg>
+        </button>
+        <li><a href="index.html#main">Home</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="contact.html">Contact me</a></li>
+      </ul>
+
+      <a href="contact.html"><button>Contact Me</button></a>
+      <button id="menuButton" onclick="ShowSlideBar()">
+        <i class="bx bx-menu"></i>
+      </button>
+    </nav>
+
+    <div class="backround-img"></div>
+
+    <div class="contact-container">
+      <div class="contact-left">
+        <h5>Let's chat</h5>
+        <h5>Tell me about your project</h5>
+        <h4>Let's create something together</h4>
+        <div class="item">
+          <div class="icon">
+            <img src="assets/icons8-gmail-64.png" />
+          </div>
+
+          <div class="details">
+            <h4>Mail me at</h4>
+            <p id="textToCopy" onclick="copyText()">darius_sandru@yahoo.com</p>
+
+            <div id="notification">
+              <img src="assets/icons8-confirm-48.png" />
+              Copied
+            </div>
+          </div>
+        </div>
+      </div>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        id="contactForm"
+      >
+        <div class="contact-right">
+          <h5>
+            Send me a message
+            <img src="assets/icons8-send-64.png" />
+          </h5>
+
+          <input
+            type="hidden"
+            name="access_key"
+            value="e9cb6b24-630d-4cc3-935d-4bb52ee899b0"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name "
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="email"
+            name="enamil"
+            placeholder="Your email "
+            class="contact-inputs"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your message "
+            class="contact-inputs"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

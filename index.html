@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/icons8-coding-48.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        
+        <ul class="side-bar">
+            <button onclick="HideSlideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                    <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+                    </svg>
+            </button>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+
+        <a href="contact.html"><button>Contact Me</button></a>
+        <button id="menuButton" onclick="ShowSlideBar()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+    
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Hey, I am Darius</h5>
+            <h3>Passionate creator of <span>innovative designs.</span></h3>
+            <p>
+                Driven by a passion for crafting memorable brand experiences.
+                Dedicated to crafting unique and impactful designs.
+            </p>
+            <button>
+                <a href="CV/CV-Sandru-Darius.pdf" download>
+                    <h2>Download CV</h2>
+                </a>
+            </button>
+            <div class="technology">
+                <h5>Tech Stack | 
+                    
+                    <img src="images-technology/icons8-html-5-48.png">
+                    <img src="images-technology/icons8-css-48.png">
+                    <img src="images-technology/icons8-javascript-48.png">
+                    <img src="images-technology/icons8-postgres-48.png">
+                    <img src="images-technology/icons8-bootstrap-48.png">
+                    <img src="images-technology/icons8-angular-48.png">
+
+                </h5>
+                
+                <h5>Socials |
+
+                    <a href="https://www.linkedin.com/in/darius-șandru-02415a234/" target="_blank">
+                        <img src="assets/icons8-linkedin-48.png" alt="linkedin">
+                    </a>
+                    <a href="https://github.com/dariussandru" target="_blank">
+                        <img src="assets/icons8-github-48.png" alt="github">
+                    </a>
+                     
+
+                </h5>
+            </div>
+
+        </div>
+        <div class="right">
+            <img src="assets/poza-mine2.jpg">
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h3>My Expertise</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-directions'></i></div>
+                <h4>Strategy & Direction</h4>
+                <p>
+                    Ability to develop creative strategies for projects, considering client
+                    objectives and needs. Providing strategic guidance to achieve desired outcomes.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
+                <h4>Versatile Developer</h4>
+                <p>
+                    I'm a versatile and adaptable frontend developer, 
+                    always eager to learn and create outstanding web experiences.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-figma'></i></i></div>
+                <h4>UI & UX Design</h4>
+                <p>
+                    Ability to create visually appealing and functional interfaces, with a focus 
+                    on understanding user needs and optimizing their user experience.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
+                <h4>Agile Programming</h4>
+                <p>
+                    Experience in Agile methods for quick and efficient software development. 
+                    Ability to adapt and deliver quality 
+                    results rapidly in collaborative environments.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="assets/poza-mine.jpg">
+        </div>
+        <div class="right">
+            <h3>About Me</h3>
+            <p>
+                    Hi there! I'm Darius, a 21-year-old programming enthusiast currently 
+                pursuing studies at the Faculty of Mathematics and Computer Science at 
+                UBB-Cluj. I enjoy working in teams, meeting new people, 
+                and continuously exploring the fascinating world of technology. My passion for programming 
+                drives me to develop innovative applications and contribute to projects that bring value. 
+                
+            </p>
+            <p>
+                    If you'd like to learn more, feel free to explore my portfolio and get in touch with me. 
+                I'm looking forward to connecting!
+            </p>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h3>My Portfolio</h3>
+            </div>
+        </div>
+
+        <div class="portfo-items">
+            
+            <div class="left">
+                <img src="assets/Fashion-Boutque.PNG">
+            </div>
+
+            <div class="right">
+
+                <h3> Fashion Boutque</h3>
+                <p> 
+                    Fashion Boutique is an online platform dedicated to fashion 
+                    enthusiasts. It provides a user-friendly interface for 
+                    exploring the latest trends and affordable accessories.
+                </p>
+                <h3> HTML<samp>|</samp>CSS</h3>
+
+                <div class="links-container">
+                    <a class="link" href="https://github.com/dariussandru/Fashion-Boutque.git" target="_blank">
+                        View code
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a class="link" href="ShopWeb/products.html">
+                        View more
+                        <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="portfo-items">
+
+
+            <div class="right">
+
+                <h3> Itinerese</h3>
+                <p> Itinerease is a platform that allows you to 
+                    create personalized </p>
+                    <p>itineraries, 
+                    add destinations, and manage your travel budget, all in one place!
+                </p>
+                <h3> Angular<samp>|</samp>Bootstrap</h3>
+
+                <div class="links-container">
+                    <a class="link" href="https://github.com/dariussandru/Itinerease.git" target="_blank">
+                        View code
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="left">
+                
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="Itinerese/home-page.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Itinerese/modal-page1.PNG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Itinerese/modal-page2.PNG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Itinerese/details-page.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="Itinerese/my-account.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="Itinerese/log-in.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    <div class="dot-container" style="text-align:center; padding-top: 5px;">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                        <span class="dot" onclick="currentSlide(6)"></span> 
+
+                        
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+        </div>
+    </div>  
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/darius.sandru.12/?locale=ro_RO" target="_blank">
+            <i class='bx bxl-facebook-square'></i>
+            </a>    
+            <a href="https://www.instagram.com/sandruu.d/" target="_blank">
+            <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://github.com/dariussandru" target="_blank">
+            <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/darius-șandru-02415a234/" target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+            </a>
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
