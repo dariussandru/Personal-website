@@ -130,6 +130,12 @@ nav button#menuButton {
   align-items: center;
   justify-content: space-evenly;
 }
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .contact-left h4 {
   margin-top: 2%;
 }
@@ -255,6 +261,36 @@ nav button#menuButton {
   nav ul li a {
     font-size: 15px;
   }
+  .contact-container {
+    gap: 40px;
+  }
+  .contact-left h5 {
+    font-size: 3vh;
+    margin-left: 10%;
+  }
+  .contact-left h4 {
+    font-size: 2vh;
+    margin-left: 10%;
+  }
+  .item {
+    width: 40vh;
+  }
+  .item .details p {
+    font-size: 2vh;
+  }
+  .item .icon {
+    width: 32px;
+    height: 32px;
+  }
+  .contact-right h5 {
+    font-size: 3vh;
+  }
+  .contact-inputs {
+    width: 50vh;
+  }
+  .contact-right button {
+    padding: 1.5vh 2vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -287,5 +323,25 @@ nav button#menuButton {
 
   nav .logo a {
     font-size: 18px;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    height: 100vh;
+    margin-top: 8vh;
+    gap: 0;
+  }
+  .contact-container h5 {
+    font-size: 4vh;
+    margin-left: 0%;
+  }
+  .contact-container h4 {
+    font-size: 3vh;
+    margin-left: 0%;
+  }
+  .contact-right textarea {
+    height: 15vh;
   }
 }

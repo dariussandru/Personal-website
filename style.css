@@ -587,6 +587,10 @@ footer p {
   .portfolio .portfo-items {
     gap: 18px;
   }
+  .portfolio .portfo-items .left img {
+    height: 30vh;
+    border-radius: 2%;
+  }
 
   footer {
     padding: 15px;
@@ -607,6 +611,9 @@ footer p {
     font-size: 18px;
   }
 
+  .main {
+    padding: 100px 30px;
+  }
   .main .left h3 {
     font-size: 32px;
   }
@@ -618,7 +625,12 @@ footer p {
   .main .left button {
     width: 100%;
   }
-
+  .main .right img {
+    width: 280px;
+  }
+  .about .left img {
+    width: 270px;
+  }
   .skills .skill-items .item {
     width: 100%;
   }
