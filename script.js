@@ -11,28 +11,37 @@ function HideSlideBar() {
   const sideBar = document.querySelector(".side-bar");
   sideBar.style.display = "none";
 }
+
 // this is funciton for slider show
+document.addEventListener("DOMContentLoaded", function () {
+  // Apelăm funcția showSlides pentru fiecare slideshow
+  showSlides(1, 1);
+  showSlides(1, 2);
+});
+let slideIndex1 = 1;
+showSlides(1, slideIndex1);
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function plusSlides(n, slideshowIndex) {
+  showSlides((slideIndex1 += n), slideshowIndex);
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function currentSlide(n, slideshowIndex) {
+  showSlides((slideIndex1 = n), slideshowIndex);
 }
 
-function showSlides(n) {
+function showSlides(n, slideshowIndex) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let slides = document
+    .getElementsByClassName("slideshow-container")
+    [slideshowIndex - 1].getElementsByClassName("mySlides");
+  let dots = document
+    .getElementsByClassName("slideshow-container")
+    [slideshowIndex - 1].getElementsByClassName("dot");
   if (n > slides.length) {
-    slideIndex = 1;
+    slideIndex1 = 1;
   }
   if (n < 1) {
-    slideIndex = slides.length;
+    slideIndex1 = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -40,8 +49,8 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  slides[slideIndex1 - 1].style.display = "block";
+  dots[slideIndex1 - 1].className += " active";
 }
 
 //function for copied action

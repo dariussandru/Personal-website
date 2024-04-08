@@ -20,7 +20,12 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
         </ul>
-        
+        <a href="contact.html"><button>Contact Me</button></a>
+        <button id="menuButton" onclick="ShowSlideBar()">
+            <i class='bx bx-menu'></i>
+        </button>
+
+
         <ul class="side-bar">
             <button onclick="HideSlideBar()">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
@@ -34,10 +39,7 @@
             <li><a href="contact.html">Contact me</a></li>
         </ul>
 
-        <a href="contact.html"><button>Contact Me</button></a>
-        <button id="menuButton" onclick="ShowSlideBar()">
-            <i class='bx bx-menu'></i>
-        </button>
+    
     </nav>
     
     <div class="main" id="main">
@@ -153,26 +155,62 @@
 
         <div class="portfo-items">
             
-            <div class="left">
-                <img src="assets/Fashion-Boutique.PNG">
+            <div class="images">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="Recipe/home.PNG" >
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Recipe/recipe1.PNG" >
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="Recipe/recipe2.PNG" >
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Recipe/my-profile.PNG" >
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Recipe/login.PNG" >
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Recipe/singin.PNG" >
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1,1)">❮</a>
+                    <a class="next" onclick="plusSlides(1,1)">❯</a>
+                    
+                    <div class="dot-container" style="text-align:center; padding-top: 5px;">
+                        <span class="dot" onclick="currentSlide(1,1)"></span> 
+                        <span class="dot" onclick="currentSlide(2,1)"></span> 
+                        <span class="dot" onclick="currentSlide(3,1)"></span> 
+                        <span class="dot" onclick="currentSlide(4,1)"></span> 
+                        <span class="dot" onclick="currentSlide(5,1)"></span> 
+                        <span class="dot" onclick="currentSlide(6,1)"></span> 
+                    </div>
+                </div>
             </div>
 
-            <div class="right">
+            <div class="text">
 
-                <h3> Fashion Boutique</h3>
+                <h3> Tasty Kitchen</h3>
                 <p> 
-                    Fashion Boutique is an online platform dedicated to fashion 
-                    enthusiasts. It provides a user-friendly interface for 
-                    exploring the latest trends and affordable accessories.
+                    Welcome to 'Tasty Kitchen'! 
+                    The solution to the daily dilemma 'What's for dinner?' - 
+                    find quick and delicious culinary inspiration for every day!
                 </p>
-                <h3> HTML<samp>|</samp>CSS</h3>
+                <h3> PHP<samp>|</samp>CSS<samp>|</samp>JavaScript<samp>|</samp>SQL</h3>
 
                 <div class="links-container">
-                    <a class="link" href="https://github.com/dariussandru/Fashion-Boutique.git" target="_blank">
+                    <a class="link" href="https://github.com/dariussandru/Recipes-website.git" target="_blank">
                         View code
                         <i class='bx bxl-github'></i>
                     </a>
-                    <a class="link" href="ShopWeb/products.html">
+                    <a class="link" href="https://subacrid-beat.000webhostapp.com/login.php" target="_blank">
                         View more
                         <i class='bx bx-link-external'></i>
                     </a>
@@ -180,10 +218,12 @@
 
             </div>
         </div>
+
+
         <div class="portfo-items">
 
 
-            <div class="right">
+            <div class="text">
 
                 <h3> Itinerease</h3>
                 <p> Itinerease is a platform that allows you to 
@@ -204,7 +244,7 @@
             </div>
 
 
-            <div class="left">
+            <div class="images">
                 
                 <div class="slideshow-container">
                     <div class="mySlides fade">
@@ -231,18 +271,16 @@
                         <img src="Itinerese/log-in.jpg" style="width:100%">
                     </div>
                     
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <a class="prev" onclick="plusSlides(-1,2)">❮</a>
+                    <a class="next" onclick="plusSlides(1,2)">❯</a>
                     
                     <div class="dot-container" style="text-align:center; padding-top: 5px;">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
-                        <span class="dot" onclick="currentSlide(4)"></span> 
-                        <span class="dot" onclick="currentSlide(5)"></span> 
-                        <span class="dot" onclick="currentSlide(6)"></span> 
-
-                        
+                        <span class="dot" onclick="currentSlide(1,2)"></span> 
+                        <span class="dot" onclick="currentSlide(2,2)"></span> 
+                        <span class="dot" onclick="currentSlide(3,2)"></span> 
+                        <span class="dot" onclick="currentSlide(4,2)"></span> 
+                        <span class="dot" onclick="currentSlide(5,2)"></span> 
+                        <span class="dot" onclick="currentSlide(6,2)"></span> 
                     </div>
                 </div>
                 

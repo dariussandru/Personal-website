@@ -110,7 +110,7 @@ nav button#menuButton {
   transition: color 0.2s ease;
 }
 /*--------------------CONTACT ME------------*/
-.backround-img {
+.background-img {
   position: fixed; /* Asigură că div-ul este poziționat fix pe ecran */
   top: 0;
   left: 0;
